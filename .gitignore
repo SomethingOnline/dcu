@@ -1,4 +1,5 @@
-*.txt
+ca116/*.txt
+ca117/*.txt
 *.bak
 *.py.bak
 test*

@@ -1,0 +1,34 @@
+
+import sys
+line = "19 West Bromwich Albion 11 1 3 7 8 23 -15 6\n"
+tokens = line.split()
+print(tokens)
+tt = (tokens[1:-8]) # print from past 19 (index 0) up until 11 (index -8)
+team = " ".join(tt)
+print(team)
+# read everything in, go through once to find longest team
+# go through again to print neatly
+
+'''
+lines = sys.stdin.readlines()
+
+for line in lines():
+    # process the line...
+    # find the longest team
+    
+
+# Only can go through sys.stdin once. make variable if using 2 for loops.
+for line in lines():
+    #print them
+'''
+
+
+
+# exception handling
+
+try - attempts to run something 
+
+try:                          # attempt to do something
+   # do something
+except ValueError:            # willing to handle a ValueError in this code, wont break the code
+   # print("something happened")

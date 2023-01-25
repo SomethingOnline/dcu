@@ -1,0 +1,26 @@
+
+
+PWD -> Print Working Directory (shows where u are)
+cd -> change Directory
+ls -> List files
+cd .. -> parent Directory
+ls -a          ->        Show "hidden" files (begin with ".")
+ls -l          ->        Detailed
+ls -alR        ->        Recursive
+
+cat (file)     ->        Type file out in command-line window
+
+more (file)    ->        Type file, pause for each screenful
+                         enter for new line, space for next page, q to quit
+/ -> root Directory
+
+Problems :
+Disk Quote exceeded : use "du | sort -n"
+"|" pipes the problem to another area
+Use "Internet Archive" to access things deleted from  the web.
+ls -l* - shows content of all directories alongside the directories being displayed.
+grep = search for a string
+*/*(something) - shows all files with this extension within all directories
+grep "something" */complete.html - search for "something" in these files
+
+
