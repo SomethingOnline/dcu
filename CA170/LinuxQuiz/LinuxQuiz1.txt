@@ -35,22 +35,23 @@ Q: The commands "cd /" followed by "mkdir stuff" are run, what happens?
 Returns an error , you do not have permissions to make a directory in root directory
 
 Q: Typing "cd \" causes what to happen? 
-
+Search for directory , prompts you to enter a name of a directory
 
 Q: What is the directory /bin for? 
-
+Contains commands that may be used by both the sysadmin and by users but which are required
+when no other filesystems are mounted.
 
 Q: How do you list the files in /bin? 
-
+ls
 
 Q: EXTRA QUESTION (only for experienced Linux people): Write a one-line command line to count the number of files in /bin 
-
+ls /bin | wc -l 
 
 Q: The command ls -l does what? 
-
+shows long formatted list of files
 
 Q: The command ls -a does what? 
-
+shows hidden files
 
 Q: The command ls -al does what? 
 
