@@ -17,3 +17,15 @@ for line in lines:
         print("True")
     else:
         print("False")
+
+
+# Solution in class
+
+import sys
+def contains(left, right):
+    
+    for c in left:
+        if c not in right:
+            return False
+        right = right.replace(c,"",1)
+    return right == ""
