@@ -1,0 +1,17 @@
+
+Bash Scripting:
+
+bash - default shell on Linux
+grep - basically control f for a file, allows you to find every instance of a word eg grep "word" file.txt (case sensitive)
+grep -i = every line with "word" (not case sensitive)
+grep -v = every line without "word"
+cat - concatenate (join)
+sort - sort stuff (by num first then alphabetically)
+find -type f = list all files
+find "similar prefix" = search all files for similar thing
+"|" aka pipe = combine stuff, from left | to right
+
+
+Q : Use flickr API to get info from link abt Contains
+A : wget -q (quiet, will remove loading and error messages) -O- 
+
