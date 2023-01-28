@@ -1,0 +1,74 @@
+Q:Typing "pwd" causes what to happen? 
+print working directory
+
+Q:Typing "cd" causes what to happen? 
+change directory
+
+Q: The "cd" command (then hit return) followed by the "pwd" command does what? 
+/home/user
+
+Q:Typing "cd" (then hit return) followed by "cd .." causes what to happen? 
+change directory to the directory before the one you were in
+
+Q: The commands "cd" followed by "mkdir stuff" are run, what happens? 
+make directory "stuff" in home directory
+
+Q: The commands "cd" followed by "mkdir ../stuff" are run, what happens? Why? 
+returns error , no directory named stuff available 
+
+Q: I am in my home directory and I type: cd bin - What directory am I in now? 
+changes into bin directory if the directory exists
+
+Q: I am in my home directory and I type: cd /bin - What directory am I in now? 
+brings you to your /bin directory
+
+Q: I am in my home directory and I type: cd ../bin - What happens? Why? 
+brings you to the /bin directory of the parent directory of your current directory
+
+Q: Typing "cd /" causes what to happen? 
+takes you to your root directory
+
+Q: Typing "cd /" followed by "cd .." causes what to happen? 
+takes you to parent root directory
+
+Q: The commands "cd /" followed by "mkdir stuff" are run, what happens? 
+Returns an error , you do not have permissions to make a directory in root directory
+
+Q: Typing "cd \" causes what to happen? 
+Search for directory , prompts you to enter a name of a directory
+
+Q: What is the directory /bin for? 
+Contains commands that may be used by both the sysadmin and by users but which are required
+when no other filesystems are mounted.
+
+Q: How do you list the files in /bin? 
+ls
+
+Q: EXTRA QUESTION (only for experienced Linux people): Write a one-line command line to count the number of files in /bin 
+ls /bin | wc -l 
+
+Q: The command ls -l does what? 
+shows long formatted list of files
+
+Q: The command ls -a does what? 
+shows hidden files
+
+Q: The command ls -al does what? 
+
+
+Q: The command ls -R does what? 
+
+
+Q: On Windows command line, by typing in cd \ what happens? 
+
+
+Q: On Windows command line, by typing in cd / what happens? 
+
+
+Q: On Windows, C:\ is the equivalent of what on UNIX/Linux? 
+
+
+Q: On Windows, C:\Users\me is the equivalent of what on UNIX/Linux? 
+
+
+Q: On Windows, C:\Windows\System32 is the equivalent of what on UNIX/Linux?
