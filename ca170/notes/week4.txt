@@ -1,0 +1,13 @@
+
+
+ps - see what processes are running
+ps -AF = see ALL processes
+kill (process id) - terminate some processes
+kill -KILL (definite kill)
+kill -l (kills all processes)
+
+
+nice - run something at low priority on purpose (if another program needs CPU time)
+time - time a run of a program
+
+check dcu notes on website - notes/unix/more.html

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/layout.css" />
+    <title>Jack's Web Design Portfolio</title>
+  </head>
+  <body>
+    <!-- Home section -->
+    <div class="home-section" id="home-section">
+      <div class="nav">
+        <div class="header">
+          <a href="#home-section">Home</a>
+          <a href="#about-section">About</a>
+          <a href="#work-section">Work</a>
+          <a href="#gallery-section">Gallery</a>
+          <a href="#contact-section" style="width:100%;">Contact</a>
+        </div>
+        <div class="welcome-section">
+          <h2>Welcome to my website</h2>
+          <p>
+            This website is part of my CA103 Portfolio. I created this website using my knowledge of the Gestalt Principles
+            and other methods I have learned over the course of this module. I had a little bit of previous knowledge with creating a website as
+            part of my Leaving Cert 2021 project.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="down-arrow">
+      <a href="#about-section" id="arrow"></a>
+      <a href="#about-section" id="arrow"></a>
+      <a href="#about-section" id="arrow"></a>
+    </div>
+
+    <!-- About me Section -->
+    <div class="about-section" id="about-section">
+      <div class="about-me">
+        <div class="my-image">
+          <img src="Images/me-smug.jpg" alt="Picture of Me" />
+        </div>
+        <div class="side-paragraph">
+          <h2>About Me</h2>
+          <p>
+            My name is Jack Egan, I am currently 18 years old and I am a computer science student and 
+            I am currently studying at Dublin City University in my first year. I am from a town called Swords in the North of Dublin.
+
+          </p>
+          <p style="margin-top: 1rem">
+            I did my leaving cert last year, I did computer science for Leaving Cert and I achieved a H2 which has helped me with many things so far this year.
+            We used a little bit of CSS, HTML and a little bit of JavaScript when I did work last year.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/jack.egan12/">Instagram</a>
+            <a href="https://www.linkedin.com/in/jack-egan-829324251/">LinkedIn</a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome">Snapchat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Section-->
+    <div class="work-section" id="work-section">
+        <div class="first-image">
+            <div class="previous-projects">
+                <h2>Work Experience</h2>
+                <h3>AIB:</h3>
+                <p> I worked at AIB in Leopardstown during Transition Year.<br>
+                  This work experience was heavily tech based.<br>
+                  This got me really interested in Cyber Security.
+                </p>
+                <h3>AppleGreen:</h3>
+                <p> I worked in Applegreen Kinsealy for the entire Summer 2021.<br>
+                  This helped me improve my communication and teamwork skills.<br>
+                  I made many friends and this helped me save up my money over the Summer.
+                </p>
+                <h3>SwordsEvents:</h3>
+                <p> This was my first job, I got it when I was sixteen years old.<br>
+                  My task was primarily as Event staff and security.<br>
+                  I worked on different events such as Christmas market and Summer Events.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    
+    <div class="gallery-section" id="gallery-section">
+
+        <div class="first-1-image">
+            <div class="info">
+                <h2>Fashion</h2>
+                <p>Fashion is something that interests me a lot, especially streetwear or urban fashion as this impacts me directly.
+                  I like to wear a lot of hoodies or sweatshirts, cargo bottoms, air forces and often I like to add accessories to my outfits.
+                  There are many brands that I wish I had more articles of clothing from but fashion can be very expensive at times. 
+                  (Hover over images for colour)
+                </p>
+            </div>
+
+        </div>
+        <div class="second-2-image">
+            <div class="info2">
+                <h2>Food</h2>
+                <p>Food is another one of my favourite things. I love to try many different types of food and especially
+                  when trying food from different cultures. 
+                  Some of my favourite foods are chinese food and middle eastern food.
+                </p>
+            </div>
+
+        </div>
+        <div class="third-3-image">
+            <div class="info3">
+                <h2>Travel</h2>
+                <p>I have travelled to many different countries in my Life. Last year I went on my first holidays without my parents
+                  to Amsterdam, Netherlands. It was very warm over there as it was the middle of Summer. This year I plan to take a trip
+                  to the Middle East or to North America.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Section-->
+
+    <div class="contact-section" id="contact-section">
+      <div class="container-content">
+        <h2>Contact Me</h2>
+        <div class="content">
+            <form action="https://formspree.io/[your email address goes here]" method="post">
+                <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                <p>
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" type="text" name="contact-name" placeholder="Please enter your name" />
+                </p>
+                <p>
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" type="email" name="contact-email" placeholder="Please enter your email" />
+                </p>
+                <p>
+                    <label for="contact-phone">Phone</label>
+                    <input id="contact-phone" type="tel" name="contact-phone" placeholder="Please enter your phone number" />
+                </p>
+                <p>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="contact-message" rows="5" style="padding-right: 5rem;"> </textarea>
+                </p>
+                <p>
+                    <input type="submit" value="send message" styles="padding: 2rem;" />
+                </p>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer id = "footer-layout">
+      <p> &copy; <a href="dcu.ie/">DCU 2022-2023</a>
+<span class="footer-separator">&middot;</span>
+<span class="footer-text">Jack Egan</span> 
+<span class="footer-separator">&middot;</span> 
+<span class="footer-text">This is student coursework for CA106 Web Design</span> 
+<span class="footer-separator">&middot;</span> 
+<span class="footer-separator">&middot;</span> 
+<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+</p>
+<!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+ 
+</footer>
+  </body>
+</html>

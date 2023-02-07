@@ -25,17 +25,6 @@ while i < len(list1) and i < len(list2):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # i = 0
 # while i < len(filenames):
 #     if i == 0:
