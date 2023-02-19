@@ -8,15 +8,15 @@ import sys
 # speed = dist/time
 # speed = rounded down to nearest integer
 
-line1 = sys.stdin.readline()
-prevTime, prevDist = [int(t) for t in line1.strip().split()]
-
 lines = sys.stdin.readlines()
-speeds = []
+prevTime, prevDist = [int(t) for t in lines[0].strip().split()]
 
-for line in lines:
-    curTime, curDist = [int(t) for t in line.strip().split()]
+speeds = []
+for line in lines[1:]:
+    line = line.strip().split()
+    line = [int(t) for t in line]
+    curTime , curDist = line
     speed = (curDist - prevDist) // (curTime - prevTime)
     speeds.append(speed)
-    prevTime, prevDist = curTime, curDist
+    prevDist, prevTime = curDist, curTime
 print(max(speeds))

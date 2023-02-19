@@ -23,12 +23,3 @@ for a,b in zip(line1, line2):
     else:
         newline.append("-")
 print("".join(newline))
-
-# for char1 in line1:
-#     newline = ""
-#     for char2 in line2:
-#         if char1 in char2:
-#             line1.replace(char2, "*")
-# print(line1)
-
-

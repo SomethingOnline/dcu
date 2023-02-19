@@ -10,6 +10,8 @@
 #  3 * 6 = 18
 #  1 * 8 = 8
 
+
+# Working solution , but not best practice
 import sys
 
 x = sys.stdin.readline().strip()
@@ -40,16 +42,19 @@ print(result)                  # 49
 numstr = str(result)    # so can loop back through
 
 # Working function
-def product(numstr):
-    while True:         # Infinite loop until it hits return Statement
+#!/usr/bin/env python3
 
-        digits = [int(c) for c in numstr if int(c) != 0]    # Non zero digits
-
+import sys
+def getProduct(numStr):
+    while True:
+        digits = [int(c) for c in numStr if int(c) != 0]
         result = 1
         for d in digits:
-            result = result * d 
-           
-        if 1 <= result <= 9:
+            result = result * d
+        if result >= 1 and result <= 9:
             return result
+        else:
+            numStr = str(result)
 
-        numstr = str(result)
+line = sys.stdin.readline().strip()
+print(getProduct(line))
