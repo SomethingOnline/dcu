@@ -1,0 +1,13 @@
+
+
+For loop in shell:          # Will print everything in directory
+
+for i in $*
+do 
+    echo li
+done
+
+
+
+# use if test -f $i 
+# to check if file exists
