@@ -17,6 +17,15 @@ class Circle(object):
         self.radius = radius
         self.centre = centre
         if self.centre == None:
-            self.centre = Point(0, 0)
+            self.centre = Point()
+        # self.centre = Point() if c is None else c
+    
+    # def __str__(self):
+    #     return f'Centre: {self.centre}\nRadius: {self.radius}'
+    
     def __str__(self):
-        return f'Centre: {self.centre}\nRadius: {self.radius}'
+        lines = []
+        lines.append('Centre: {}'.format(self.centre))
+        lines.append('Radius: {:.0f}'.format(self.radius))
+        return '\n'.join(lines)
+
