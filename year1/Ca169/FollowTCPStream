@@ -1,0 +1,25 @@
+GET / HTTP/1.1
+Host: 9anime.to
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 06 Apr 2023 12:54:59 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Location: https://9anime.to/
+X-Cache: EXPIRED
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b27xFvz%2B%2FspcZ4QOdl0%2B%2BesMy4cHrGAvzfo4Civh1vY5y2b7T2biKAVC1XiutrNQ0gZys1pwNknVMGYc0Mw0Vt95Zd9uvX7OTOe2OW0o1%2BIrCkGv7sOv5g%2BQ9WE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7b3a2ebd692974f1-LHR
+alt-svc: h2=":443"; ma=60
+
+0
+
