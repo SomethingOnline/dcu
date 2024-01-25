@@ -25,7 +25,7 @@ public class Pokemon_2 {
 
     public void setName(String newName) {
         if ("lukas".equals(newName)) {
-            this.newName = "You're a fag lol";
+            this.newName = "testing";
         } else {
             this.newName = newName;
         }
