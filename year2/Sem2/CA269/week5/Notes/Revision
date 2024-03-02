@@ -1,0 +1,83 @@
+Revision session:
+
+Classes, inheritance, Polymorphism
+
+A class is a grouping of data and methods into an object following the object
+oriented and Encapsulation principles.
+
+example class:
+
+class Hello{
+    int age;
+    String name;
+
+    // default constructor
+    Hello() {
+        age = 0;
+        name = "Jahn Doe"
+    }
+
+    // parametered constructor
+    // constructors can be public or private
+    // private constructors are hidden from everyone else except
+    // this classes methods
+
+    private Hello(int age, String name){
+        this.age = age;
+        this.name = name;
+    }
+
+    // overrides Object.toString - not needed to use @override
+    // method must be public otherwise not everyone can call it
+    public String toString(){
+        return "Hello" + name + " you are " + age + "years old";
+    }
+
+    static public void main(String args[]){
+        Hello person1 = new Hello();
+        System.out.println(person1);
+
+        Hello person2 = new Hello(25, "Alice");
+        System.out.println(person2);
+    }
+}
+
+
+inheritance is the mechanism by which a class can be extended in terms
+of adding new data and methods, or changing behaviour of existing ones
+Access modifiers (public, private) modify the visibiluty of the code
+so that you can control which other code can reuse classes, data or methods
+
+Using the hello class above:
+// inherits Hello from Hello class
+class HelloAgain extends Hello{
+    String side;
+    // default constructor
+    HelloAgain(){
+        // can reuse parent constructor to to do:
+        // age = 0, name="John Doe"
+        super();
+        // new stuff for this class
+        side = "other";
+    }
+
+    private HelloAgain(int age, String name, String side){
+        // cannot use the private from the parent constructor
+        // so super(age, name) will not work
+        this.age = age;
+        this.name = name;
+        this.side = side;
+    }
+    // overrrides Hello.toString() - uses @Override for compiler
+    @Override
+    public string toString(){
+        return "Hello " + name + " from the " + side + ", you are " + age + " years old!";
+    }
+
+    static public void main(String args[]){
+        Hello person1 = new Hello()
+        System.out.println(person1);
+        Hello person2 = new HelloAgain(25, "Alice", "other");
+        System.out.println(person2);
+    }
+}
