@@ -48,31 +48,38 @@ father(X, Y):-
 sister(X, Y):-
     female(X),
     father(Z, Y),
-    father(Z, X).
+    father(Z, X),
+    X \== Y.
 
 brother(X, Y):-
     male(X),
     father(Z, Y),
-    father(Z, X).
+    father(Z, X),
+    % parent(X, Z)
+    % parent(Y, Z)
+    X \== Y.
 
 aunt(X, Y):-
     sister(X, Z),
-    parent(Y, Z).
+    parent(Y, Z),
+    X \== Y.
 
 siblings(X, Y):-
-    brother(X, Y),
+    brother(X, Y);
     sister(X, Y).
 
 cousin(X, Y):-
     parent(X, Z),
     parent(Y, W),
-    siblings(W, Z).
+    siblings(W, Z),
+    Z \== W.
 
 paternalgrandmother(X, Y):-
     mother(X, Z),
     father(Z, Y).
 
 
+/*
 % base case
 fizzbang([], []).
 
@@ -90,3 +97,26 @@ fizzbang([Head| Tail], [Head|FilteredTail]):-
 fizzbang([Head|Tail], [Head|FilteredTail]):-
     \+ (multiple_of_3(Head); multiple_of_5(Head)),
     fizzbang(Tail|FilteredTail).
+*/
+
+% base case 
+oddsum(0, []).
+
+% sum
+oddsum(Sum, [H | T]):-
+    H mod 2 =:= 1,
+    oddsum(SumTail, T),
+    Sum is H + SumTail.
+
+oddsum(Sum, [H | T]):-
+    H mod 2 =:= 0,
+    oddsum(Sum, T).
+
+% maximum
+maximum(0, []).
+
+maximum(X, [X]).
+
+maximum(X, [H | T]):-
+    maximum(MaxT, T),
+    X is max(H, MaxT).
