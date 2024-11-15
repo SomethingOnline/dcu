@@ -78,7 +78,7 @@
 // Replace with your actual Hugging Face API token
 const API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2";
 const headers = {
-    Authorization: "Bearer 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",
+    Authorization: "Bearer ",
     "Content-Type": "application/json"
 };
 

@@ -4,7 +4,7 @@
 //		"https://api-inference.huggingface.co/models/1231czx/llama3_it_ultra_list_and_bold500",
 //		{
 //			headers: {
-//				Authorization: "Bearer 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",
+//				Authorization: "Bearer ",
 //				"Content-Type": "application/json",
 //			},
 //			method: "POST",
@@ -26,7 +26,7 @@ async function query(data) {
 	  "https://api-inference.huggingface.co/models/1231czx/llama3_it_ultra_list_and_bold500", // The model URL
 	  {
 		headers: {
-		  Authorization: "Bearer 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", // Your Hugging Face API token
+		  Authorization: "Bearer ", // Your Hugging Face API token
 		  "Content-Type": "application/json",
 		},
 		method: "POST",
