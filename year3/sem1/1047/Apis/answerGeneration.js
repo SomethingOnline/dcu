@@ -3,7 +3,7 @@
 //		"https://api-inference.huggingface.co/models/1231czx/llama3_it_ultra_list_and_bold500",
 //		{
 //			headers: {
-//				Authorization: "Bearer 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",
+//				Authorization: "Bearer ",
 //				"Content-Type": "application/json",
 //			},
 //			method: "POST",
